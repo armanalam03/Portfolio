@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <title>Armaan's Gallery</title>
+</head>
+<body id="my-scrollbar">
+    <div class="gallery-container" id = "gallery-container">
+        <!-- <span id="scroll">SCROLL →</span> -->
+        <div class="gallery-grid" id = "gallery-grid">
+            
+        </div>
+    </div>
+    <div class="full-image-container" id="full-image-container" style="
+        visibility:hidden;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    ">
+        <img src="../images/gallery/IMG20230204144835.jpg" class="full-image">
+
+        <div class="close" id="close" style="
+            font-size: 30px;
+            font-weight: 800;
+            color: white;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        ">
+            ✕
+        </div>
+    </div>
+
+    <script src="../scripts/gallery.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar@8.7.4/dist/smooth-scrollbar.js"></script>
+    <script>
+        var Scrollbar = window.Scrollbar;
+        const options = {
+            'damping': "0.05"
+        }
+        Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+    </script>
+</body>
+</html>

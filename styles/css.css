@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: Belleza; */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: Belleza;
+}
+
+/* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffffc5;
+    width: 3px;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    width: 7px;
+  }
+
+ul.transition {
+    display: flex;
+    position: absolute;
+    z-index: 18;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    transform: scaleY(1);
+    background-color: black;
+    width: 33.33%;
+}
+
+
+.name-container{
+    position: relative;
+    background: url(../images/cover.png);
+    background-size: 100%;
+    background-position: 80% 55%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 21.9em;
+    overflow: hidden;
+}
+
+.name{
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+    bottom: -70px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to top, white 15%, rgba(255, 255, 255, 0) 90%);
+}
+
+/* .letter{
+    opacity: 1;;
+} */
+
+.about-container{
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url("../images/graphics/about.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blackShade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.about{
+    color: white;
+    font-size: 18em;
+    padding: 2%;
+}
+
+.head-text{
+    font-size: 2em;
+    font-family: Antonio;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.about-text{
+    color: white;
+    /* padding: 2%; */
+    font-size: 3.5em;
+    width: 80%;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.line{
+    position: relative;
+}
+.line-mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+    width: 0%;
+    z-index: 10;
+    height: 100%;
+}
+
+.photography-container{
+    position: relative;
+    font-size: 17em;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* border-radius: 0 0 .2em .2em; */
+    background-color: white;
+    /* background-image: linear-gradient(white , black); */
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-family: Tangerine; */
+    font-weight: 300;
+    height: 50%;
+    font-size: 1.5em;
+}
+/* .photo{
+    height: 60%;
+} */
+.projectText{
+    font-size: 1.2em;
+}
+/* .graphy{
+    margin-left: 1.8em;
+    margin-bottom: 30%;
+    height: 10%;
+} */
+
+.photo-cards, #content{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.photo-card{
+    /* background-image: url(../images/gallery/IMG20230105105156.png);
+    background-size: cover; */
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    margin-right: .1em;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    color: rgb(119, 255, 0);
+    display: flex;
+    align-items: flex-end;
+    font-size: 50px;
+    /* transition: width 1s ease-in-out, height 1s ease-in-out; */
+    transition: 500ms;
+}
+/* .photo-card:hover{ 
+    width: 830px;
+    height: 530px;
+} */
+.shade{
+    /* background-color: black; */
+    background-image: linear-gradient(to right, black 20%, transparent 200%);
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    position: absolute;
+    border-radius: 5%;
+    transition: 1s;
+}
+.photo-card:hover .shade{
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
+
+.photo{
+    width: 800px;
+    height: 500px;
+    border-radius: 5%;
+    transition: 1s;
+}
+.photo-card:hover .photo{
+    scale: 0.98;
+}
+.description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    z-index: 16;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.title{
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+.project-description{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin-bottom: 4%;
+}
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech{
+    padding: 0.5%;
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-right: 2%;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* .sign-translator{
+    background-image: url("../images/graphics/signLanguage.png");
+}
+.chatapp{
+    background-image: url("../images/graphics/chatapp.png");
+}
+.xiomiapp{
+    background-image: url("../images/graphics/xiomiapp.png");
+}
+.github{
+    background-image: url("../images/graphics/signLanguage.png");
+} */
+
+
+.project-name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 100px;
+}
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    font-size: 2em;
+}
+.photo-card:hover .link-container{
+    opacity: 0.5;
+}
+.empty-div{
+    margin-right: 80%;
+}
+
+.projects-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/graphics/projects.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projects-grid{
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    bottom: 5%;
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 10px;
+}
+.project{
+    background-color: aquamarine;
+}
+
+.contact-container{
+    z-index: -1000;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: flex-start;
+    font-size: 10em;
+    position: sticky;
+    bottom: 0;
+}
+
+.gallery-show-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;    
+    overflow: hidden;
+    border-radius: 0px 0px 50px 50px;
+}
+.hobby{
+    font-size: 10em;
+    color: white;
+    position: absolute;
+    z-index: 15;
+    top: 5%;
+    left: 1%;
+    font-family: Tangerine;
+}
+.frame-container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.frame-container:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 70%;
+    background: #ffffff;
+    left: 0;
+    top: 25%;
+    position: absolute;
+  }
+
+.frame-container>iframe{
+    width: 100%;
+    height: 80%;
+}
+
+.gallery-container-bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
