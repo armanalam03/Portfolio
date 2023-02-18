@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 *{
     padding: 0;
     margin: 0;
-    /* font-family: Belleza; */
+    text-decoration: none;
+    cursor: none;
 }
 
 body{
@@ -92,16 +93,11 @@ ul li {
     background: linear-gradient(to top, white 15%, rgba(255, 255, 255, 0) 90%);
 }
 
-/* .letter{
-    opacity: 1;;
-} */
-
 .about-container{
     position:relative;
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    /* background-color: rgb(0, 0, 0); */
     background-image: url("../images/graphics/about.png");
     background-position: center;
     background-size: cover;
@@ -125,20 +121,20 @@ ul li {
 }
 
 .head-text{
-    font-size: 2em;
-    font-family: Antonio;
+    font-size: 7em;
+    font-family: Gloock;
     color: white;
-    position: sticky;
     top: 0;
+    left: 0;
     z-index: 50;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-text{
     color: white;
-    /* padding: 2%; */
-    font-size: 3.5em;
+    font-size: 3.5rem;
     width: 80%;
-    text-align: justify;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,30 +165,35 @@ ul li {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    /* border-radius: 0 0 .2em .2em; */
     background-color: white;
-    /* background-image: linear-gradient(white , black); */
 }
+.photography-container>span{
+    font-family: Gloock;
+}
+.github-card{
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/graphics/github.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
 .text-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-family: Tangerine; */
     font-weight: 300;
     height: 50%;
     font-size: 1.5em;
 }
-/* .photo{
-    height: 60%;
-} */
 .projectText{
     font-size: 1.2em;
 }
-/* .graphy{
-    margin-left: 1.8em;
-    margin-bottom: 30%;
-    height: 10%;
-} */
 
 .photo-cards, #content{
     position: absolute;
@@ -206,8 +207,6 @@ ul li {
     align-items: flex-end;
 }
 .photo-card{
-    /* background-image: url(../images/gallery/IMG20230105105156.png);
-    background-size: cover; */
     background-position: center;
     background-size: cover;
     width: 800px;
@@ -220,15 +219,9 @@ ul li {
     display: flex;
     align-items: flex-end;
     font-size: 50px;
-    /* transition: width 1s ease-in-out, height 1s ease-in-out; */
     transition: 500ms;
 }
-/* .photo-card:hover{ 
-    width: 830px;
-    height: 530px;
-} */
 .shade{
-    /* background-color: black; */
     background-image: linear-gradient(to right, black 20%, transparent 200%);
     opacity: 0.9;
     width: 100%;
@@ -252,6 +245,7 @@ ul li {
 .photo-card:hover .photo{
     scale: 0.98;
 }
+
 .description{
     position: absolute;
     bottom: 0;
@@ -285,21 +279,6 @@ ul li {
     border-radius: 5px;
     font-weight: 700;
 }
-
-/* .sign-translator{
-    background-image: url("../images/graphics/signLanguage.png");
-}
-.chatapp{
-    background-image: url("../images/graphics/chatapp.png");
-}
-.xiomiapp{
-    background-image: url("../images/graphics/xiomiapp.png");
-}
-.github{
-    background-image: url("../images/graphics/signLanguage.png");
-} */
-
-
 .project-name{
     position: absolute;
     left: 0;
@@ -353,14 +332,81 @@ ul li {
 .contact-container{
     z-index: -1000;
     width: 100vw;
-    height: 50vh;
+    height: 61vh;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
     align-items: flex-start;
-    font-size: 10em;
     position: sticky;
     bottom: 0;
+    font-family: Gloock;
+    background-image: url("../images/graphics/cropped2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+#contact-text{
+    font-size: 9vw;
+}
+.mail{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40%;
+    top: 65%;
+    z-index: 20;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail>span{
+    font-size: 30px;
+    line-height: .1;
+}
+
+
+.gmail{
+    position: fixed;
+    top: 40%;
+    right: 20%;
+    z-index: 30;
+    width: 20%;
+    height: 60%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gmail>span{
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.contact-blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    background-image: linear-gradient(to right, white 40%, transparent);
+}
+.contact-container>span{
+    width: 50%;
+    line-height: 0.9;
+    padding: 5%;
+    z-index: 20;
+    position: fixed;
+    z-index: 100;
+    top: 40%;
+    left: 0;
 }
 
 .gallery-show-container{
@@ -372,16 +418,15 @@ ul li {
     align-items: center;
     position: relative;    
     overflow: hidden;
-    border-radius: 0px 0px 50px 50px;
 }
 .hobby{
-    font-size: 10em;
+    font-size: 7em;
     color: white;
     position: absolute;
     z-index: 15;
-    top: 5%;
+    top: 6%;
     left: 1%;
-    font-family: Tangerine;
+    font-family: Gloock;
 }
 .frame-container{
     width: 85%;
