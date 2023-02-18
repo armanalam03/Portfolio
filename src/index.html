@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Armaan</title>
 </head>
 <body class="body" id="body">
@@ -28,7 +29,7 @@
             <li></li>
         </ul>
     </div>
-    <div class="name-container container" data-cursor="-exclusion -lg">
+    <div class="name-container container" data-cursor="-exclusion -lg" data-cursor-text=".">
         <span class="name" id="name">
             <span class="letter" >A</span>
             <span class="letter" >R</span>
@@ -38,26 +39,19 @@
             <span class="letter" >N</span>
         </span>
     </div>
-    <div class="about-container container" data-cursor="-exclusion -lg">
+    <div class="about-container container" data-cursor="-exclusion -lg" data-cursor-text=".">
         <div class="blackShade"></div>
-        <span class="head-text">ABOUT</span>
-        <!-- <span class="about" id="about">About</span> -->
         <span class="about-text" id="split-text">
-           <!--  Hi! My self Armaan Alam. I am an student pursuing Engineering. 
-            I am a Frontend Web Developer. Technologies I am good at are ReactJs, C++, Python and more on count. -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, qui! Earum hic eos illum, cum, reprehenderit praesentium nemo eveniet sunt repellat error sit soluta ratione ipsam odio vel quasi commodi aliquid? Quas aliquid aperiam sapiente provident blanditiis expedita, velit voluptas numquam tempora nemo fuga vitae assumenda beatae. Eos, dicta. Ipsum?
+            Hi! My self <em>Armaan Alam</em>. I am an student pursuing Engineering. 
+            I am a <em>Frontend Web Developer</em>. Technologies I am good at are ReactJs, Nextjs, C++, Python and more on count. I am keeping myself up to date by enhancing my skills. I am also a <em>Designer</em> and a <em>Photographer</em>. I love to do photography and photo editing. I love what I do.
         </span>
     </div>
-    <div class="photography-container container" data-type="horizontal">
-        <span class="projectText" id="projectText">Projects</span>
-        <!-- <div class="text-container">
-            <span class="projectText">Projects</span>
-            <span class="graphy"></span>
-        </div> -->
+    <div class="photography-container container" data-type="horizontal" data-cursor-text=".">
+        <span class="projectText" id="projectText">Projects.</span>
         <div class="photo-cards" id="wrapper">
             <div id="content">
                 <div class="empty-div"></div>
-                <div class="photo-card" data-cursor-text="View on Github">
+                <a class="photo-card" data-cursor-text="View on Github" href="https://github.com/armanalam03/SignLanguage" target="_blank">
                     <div class="shade"></div>
                     <img src="../images/graphics/signLanguage.png" class="photo">
                     <div class="description">
@@ -76,8 +70,8 @@
                             <span class="tech">Machine Learning</span>
                         </div>
                     </div>
-                </div>
-                <div class="photo-card" data-cursor-text="View on Github">
+                </a>
+                <a class="photo-card" data-cursor-text="View on Github" href="https://github.com/armanalam03/ChatApp" target="_blank">
                     <div class="shade"></div>
                     <img src="../images/graphics/chatapp.png" class="photo">
                     <div class="description">
@@ -96,8 +90,8 @@
                             <span class="tech">GitHub</span>
                         </div>
                     </div>
-                </div>
-                <div class="photo-card" data-cursor-text="View on Github">
+                </a>
+                <a class="photo-card" data-cursor-text="View on Github" href="https://github.com/armanalam03/Xiomi-Ode2Code-2.0" target="_blank">
                     <div class="shade"></div>
                     <img src="../images/graphics/xiomiapp.png" class="photo">
                     <div class="description">
@@ -116,48 +110,19 @@
                             <span class="tech">Android Studio</span>
                         </div>
                     </div>
-                </div>
-                
-                <!-- <img src="../images/graphics/chatapp.png" data-cursor-img="../images/graphics/chatapp.png" class="photo-card">
-                <img src="../images/graphics/xiomiapp.png" data-cursor-img="../images/graphics/xiomiapp.png" class="photo-card">
-                <img src="../images/gallery/LRM_20230105_112203.png" class="photo-card"> -->
-                <!-- <div class="photo-card sign-translator" style="width: 500px">
-                    <div class="project-title">Sign Translator</div>
-                    <div class="project-description">Translates sign into words</div>
-                </div>
-                <div class="photo-card chatapp" style="width: 500px">
-                    <div class="project-title">Chat App</div>
-                    <div class="project-description">Translates sign into words</div>
-                </div>
-                <div class="photo-card xiomiapp" style="width: 500px">
-                    <div class="project-title">SOP vender Application</div>
-                    <div class="project-description">Translates sign into words</div>
-                </div>
-                <div class="photo-card github" style="width: 500px">
-                    <div class="project-title">Github</div>
-                    <div class="project-description">Translates sign into words</div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- <div class="projects-container container">
-        <span class="head-text">PROJECTS</span>
-        <div class="projects-grid">
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        </div>
-    </div> -->
-    <div class="gallery-show-container" data-cursor="-exclusion -lg">
-        <!-- <img src="../images/graphics/color-dots.png" alt="" class="gallery-container-bg"> -->
-        <span class="hobby">Photography</span>
+                </a>
+    <div class="gallery-show-container" data-cursor="-exclusion -lg" data-cursor-text=".">
+        <span class="hobby">Photography.</span>
         <div class="frame-container">
-            <iframe src="../src/gallery.html" frameborder="0" ></iframe>
+            <iframe src="../src/gallery.html" frameborder="0"></iframe>
         </div>
     </div>
-    <div class="contact-container container" data-cursor="-exclusion -lg">
-        <span>Contact Me</span>
+    <div class="contact-container container" data-cursor="-exclusion -lg" data-cursor-text=".">
+        <span id="contact-text">Let's do great work together.</span>
+        <a href="mailto:armanalam032001@gmail.com" class="gmail" data-cursor-stick>
+            <span>→</span>
+        </a>
+        <div class="contact-blur"></div>
     </div>
 
     
@@ -173,7 +138,6 @@
 
         const text = new SplitType('#split-text', { types: 'lines, words' })
         const div = document.createElement("div");
-        // document.getElementsByClassName(".line").appendChild(div)
         $( ".line" ).append( "<div class='line-mask'></div>" );
 
         $(".line").each(function(index){
@@ -190,7 +154,7 @@
             });
             tl.from(targetElement, {
                 width: "100%",
-                duration: 1
+                duration: 4
             })
         })  
 
@@ -210,33 +174,13 @@
                 ease: "back.out",
                 stagger: {
                 each: .1,
-    },
+                },
             })
 
 
         var Scrollbar = window.Scrollbar;
       
         Scrollbar.init(document.querySelector('#my-scrollbar'));
-        
-
-        
-
-        /* container = document.getElementById("#about")
-        var text = new Blotter.Text("About", {
-            family: "serif",
-            size: 300,
-            fill: "#fff"
-        })
-
-        var material = new Blotter.FliesMaterial();
-        material.uniforms.uPointCellWidth.value = 0.01;
-        material.uniforms.uPointRadius.value = 0.6;
-        material.uniforms.uSpeed.value = 3;
-        var blotter = new Blotter(material, {
-            texts: text
-        })
-        var scope = blotter.forText(text);
-        scope.appendTo(container) */
     </script>
         
 </body>
