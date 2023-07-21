@@ -198,7 +198,7 @@ ul li {
     font-size: 1.5em;
 }
 .projectText{
-    font-size: 1.2em;
+    font-size: 20vw;
 }
 
 .photo-cards, #content{
@@ -344,11 +344,12 @@ ul li {
 .contact-container{
     z-index: -1000;
     width: 100vw;
-    height: 61vh;
+    height: 32vw;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-end;
     position: sticky;
     bottom: 0;
     font-family: Gloock;
@@ -362,6 +363,32 @@ ul li {
 }
 #contact-text{
     font-size: 9vw;
+}
+.hyperlinks{
+    display: flex;
+    align-items: center;
+    margin-right: 20%;
+    position: fixed;
+    bottom: 15vw;
+    z-index: 20;
+}
+.hyperlink{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: 10%;
+    z-index: 20;
+    background-color: white;
+    display: block;
+    object-fit: cover;
+}
+.hyperlink_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
 .mail{
     width: 50px;
@@ -418,7 +445,7 @@ ul li {
     z-index: 20;
     position: fixed;
     z-index: 100;
-    top: 40%;
+    bottom: 0%;
     left: 0;
 }
 
@@ -478,12 +505,12 @@ ul li {
 
 .invert_circle{
     position: fixed;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 40vw;
     border-radius: 50%;
     /* background-color: black; */
-    bottom: -65%;
-    left: -2%;
+    bottom: -2vw;
+    left: -13vw;
     z-index: 1000;
     backdrop-filter: invert(1);
     
