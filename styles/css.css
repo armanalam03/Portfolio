@@ -515,3 +515,13 @@ ul li {
     backdrop-filter: invert(1);
     
 }
+
+.skills_icons{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.skills_icon{
+    width: 40px;
+}
